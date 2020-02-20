@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2019-11-01-preview",
+    "version": "1987-01-01-preview",
     "title": "SynapseClient",
     "x-ms-code-generation-settings": {
       "useDateTimeOffset": true
@@ -1438,7 +1438,7 @@
       "description": "Valid api-version for the request.",
       "required": true,
       "type": "string",
-      "default": "2019-11-01-preview",
+      "default": "1987-01-01-preview",
       "x-ms-skip-url-encoding": true,
       "x-ms-parameter-location": "client"
     },

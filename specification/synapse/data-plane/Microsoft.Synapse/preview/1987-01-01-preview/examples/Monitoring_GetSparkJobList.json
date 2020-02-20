@@ -2,7 +2,7 @@
   "parameters": {
     "workspaceName": "myWorkspace",
     "SynapseDnsSuffix": "dev.azuresynapse.net",
-    "api-version": "2019-11-01-preview"
+    "api-version": "1987-01-01-preview"
   },
   "responses": {
     "200": {
