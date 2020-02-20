@@ -1,14 +1,13 @@
 # Azure Synapse Analytics
 
-
 > see https://aka.ms/autorest
 
 This is the AutoRest configuration file for Azure Synapse Analytics.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Azure Synapse Analytics, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -16,21 +15,22 @@ To build the SDK for Azure Synapse Analytics, simply [Install AutoRest](https://
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Azure Synapse Analytics API.
 
 ``` yaml
 openapi-type: data-plane
-tag: package-2019-11-01-preview
+tag: package-preview-1987-01
 ```
 
 ## Suppression
+
 ``` yaml
 directive:
   - suppress: DefinitionsPropertiesNamesCamelCase
@@ -53,6 +53,17 @@ directive:
       - $.definitions.NoteBook.properties.nbformat_minor
 ```
 
+
+### Tag: package-preview-1987-01
+
+These settings apply only when `--tag=package-preview-1987-01` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-1987-01'
+input-file:
+  - Microsoft.Synapse/preview/1987-01-01-preview/monitoring.json
+  - Microsoft.Synapse/preview/1987-01-01-preview/sparkFrontend.json
+  - Microsoft.Synapse/preview/1987-01-01-preview/workspaceAcl.json
+```
 ### Tag: package-2019-11-01-preview
 
 These settings apply only when `--tag=package-2019-11-01-preview` is specified on the command line
@@ -65,8 +76,8 @@ input-file:
 ```
 
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -89,7 +100,8 @@ csharp:
 ## TypeScript
 
 See configuration in [readme.typescript.md](./readme.typescript.md)
-## Multi-API/Profile support for AutoRest v3 generators 
+
+## Multi-API/Profile support for AutoRest v3 generators
 
 AutoRest V3 generators require the use of `--tag=all-api-versions` to select api files.
 
@@ -107,11 +119,10 @@ input-file:
 
 ```
 
-If there are files that should not be in the `all-api-versions` set, 
+If there are files that should not be in the `all-api-versions` set,
 uncomment the  `exclude-file` section below and add the file paths.
 
 ``` yaml $(tag) == 'all-api-versions'
 #exclude-file: 
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
-
