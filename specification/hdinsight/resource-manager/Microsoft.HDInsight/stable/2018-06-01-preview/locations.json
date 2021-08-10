@@ -702,7 +702,7 @@
             ],
             "x-ms-enum": {
               "name": "OSType",
-              "modelAsString": false
+              "modelAsString": true
             }
           }
         },
@@ -778,7 +778,7 @@
           ],
           "x-ms-enum": {
             "name": "Tier",
-            "modelAsString": false
+            "modelAsString": true
           }
         }
       }
