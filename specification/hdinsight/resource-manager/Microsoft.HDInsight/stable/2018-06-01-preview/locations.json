@@ -712,6 +712,14 @@
           "items": {
             "type": "string"
           }
+        },
+        "espApplied": {
+          "description": "Whether apply for ESP cluster. 'true' means only for ESP, 'false' means only for non-ESP, null or empty string or others mean for both.",
+          "type": "string"
+        },
+        "computeIsolationSupported": {
+          "description": "Whether support compute isolation. 'true' means only for ComputeIsolationEnabled, 'false' means only for regular cluster.",
+          "type": "string"
         }
       }
     },
